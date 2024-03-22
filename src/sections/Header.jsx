@@ -26,6 +26,9 @@ const Header = ({
             </svg>
           </button>
           <a href="/">
+            <p className="absolute left-[99999999px]">
+              Sneakers company home page
+            </p>
             <svg width={138} height={20} alt="Sneakers home page">
               <use xlinkHref={logo}></use>
             </svg>
@@ -44,6 +47,8 @@ const Header = ({
               className="fill-[#69707D] transition-transform hover:scale-110 hover:fill-black focus:scale-110 focus:fill-black active:scale-125"
               onClick={() => setIsCartVisible(!isCartVisible)}
             >
+              {/* offscreen */}
+              <p className="absolute left-[9999px]">Cart</p>
               <svg width={22} height={20} className="transition-all" alt="Cart">
                 <use xlinkHref={cart}></use>
               </svg>
