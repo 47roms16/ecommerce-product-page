@@ -62,9 +62,8 @@ const ProductDescription = ({
             <button
               className="flex size-[3.25rem] items-center justify-start pl-4 hover:opacity-70 active:scale-110 active:opacity-90"
               onClick={() => handleCount(count - 1)}
+              aria-label="Subtract"
             >
-              {/* offscreen */}
-              <p className="absolute left-[999999px]">Subtract</p>
               <svg width={12} height={4}>
                 <use xlinkHref={minus} />
               </svg>
@@ -77,9 +76,8 @@ const ProductDescription = ({
             <button
               className="flex size-[3.25rem] items-center justify-end pr-4 hover:opacity-70 active:scale-110 active:opacity-90"
               onClick={() => handleCount(count + 1)}
+              aria-label="Add"
             >
-              {/* offscreen */}
-              <p className="absolute left-[999999px]">Add</p>
               <svg width={12} height={12}>
                 <use xlinkHref={plus} />
               </svg>

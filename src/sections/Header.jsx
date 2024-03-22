@@ -46,9 +46,8 @@ const Header = ({
             <button
               className="fill-[#69707D] transition-transform hover:scale-110 hover:fill-black focus:scale-110 focus:fill-black active:scale-125"
               onClick={() => setIsCartVisible(!isCartVisible)}
+              aria-label="Cart"
             >
-              {/* offscreen */}
-              <p className="absolute left-[9999px]">Cart</p>
               <svg width={22} height={20} className="transition-all" alt="Cart">
                 <use xlinkHref={cart}></use>
               </svg>
