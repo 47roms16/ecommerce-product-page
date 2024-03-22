@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .max-container {
+    max-width: 90rem; /* 1440px */
+    margin-inline: auto;
+  }
+
+  .mobile-nav-wrapper {
+    @apply lg:hidden;
+  }
+
+  .mobile-nav-wrapper::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    display: none;
+  }
+
+  .mobile-nav-wrapper.active::before {
+    display: block;
+  }
+
+  header .mobile-nav {
+    @apply fixed bottom-0 left-0 top-0 z-40 flex h-[100vh] -translate-x-full flex-col gap-5 bg-white pl-7 pr-[8.25rem] pt-24 text-lg font-bold transition-transform;
+  }
+
+  .mobile-nav.active {
+    @apply translate-x-0;
+  }
+
+  /* Navigation menu transitions, indicators */
+  .nav-link::after {
+    content: "";
+    @apply absolute -bottom-9 left-0 h-1 w-full scale-0 bg-orange;
+  }
+
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    @apply scale-100 transition-transform duration-300;
+  }
+
+  .carousel-btn:hover svg {
+    @apply stroke-orange;
+  }
+
+  .shoe-card-btn:hover img {
+    opacity: 0.5;
+  }
+
+  /* ---------- */
+
+  .sale::before {
+    content: "";
+    @apply absolute inset-0 top-1/2 h-[2px] w-full bg-grayish-blue;
+  }
+
+  *:focus-visible {
+    outline: dashed;
+    outline-width: 2px;
+    outline-offset: 4px;
+    outline-color: hsl(26, 100%, 55%);
+    transition: all 100ms ease-in-out;
+  }
+
+  .cart {
+    box-shadow: 0px 15px 15px rgba(56, 56, 56, 0.15);
+  }
+
+  /* Dark background */
+  .img-carousel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 0%, 0.5);
+    z-index: 1;
+    @apply max-lg:hidden;
+  }
+
+  .img-carousel {
+    display: none;
+  }
+
+  .img-carousel.active {
+    display: block;
+  }
+
+  /* Shoe image carousel modal */
+  .modal-carousel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  /* Next and Previous big image buttons */
+  .big-img .big-img-btns {
+    @apply size-10 !important;
+  }
+
+  .big-img .modal-btn-prev {
+    @apply absolute left-4 top-1/2 flex size-14 items-center justify-center rounded-full bg-white lg:hidden;
+  }
+
+  .big-img .modal-btn-next {
+    @apply absolute right-4 top-1/2 flex size-14 items-center justify-center rounded-full bg-white lg:hidden;
+  }
+
+  .modal-carousel .modal-btn-prev {
+    @apply absolute -left-7 top-1/2 flex size-14 items-center justify-center rounded-full bg-white;
+  }
+
+  .modal-carousel .modal-btn-next {
+    @apply absolute -right-7 top-1/2 flex size-14 items-center justify-center rounded-full bg-white;
+  }
+
+  .big-img-btns:hover svg {
+    @apply stroke-orange transition-colors;
+  }
+
+  .big-img-btns:active svg {
+    @apply stroke-pale-orange;
+  }
+
+  /* Selects shoe card thumbnails / li */
+  .modal-carousel :nth-child(3) {
+    justify-content: center;
+    gap: 1.875rem;
+  }
+
+  .modal-btn-close svg {
+    @apply fill-white transition-all;
+  }
+
+  .modal-btn-close:hover svg {
+    @apply z-50 scale-110 fill-orange;
+  }
+
+  .modal-btn-close:active svg {
+    @apply scale-125 fill-pale-orange;
+  }
+
+  .animate-ping {
+    animation-iteration-count: 1 !important;
+  }
+}
+
+@layer utilities {
+  .padding-x {
+    @apply px-[10.3125rem] max-xl:px-16 max-sm:px-6;
+  }
+
+  .padding-y {
+    @apply max-sm:pt-0 lg:pb-9 lg:pt-7;
+  }
+}

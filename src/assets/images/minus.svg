@@ -1,0 +1,8 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 4" id="icon-minus">
+    <defs>
+      <path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"></path>
+    </defs>
+    <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"></use>
+  </symbol>
+</svg>
