@@ -52,9 +52,9 @@ const Header = ({
           </div>
           <button className="rounded-full outline-orange hover:outline hover:transition-all active:outline-8">
             <img
-              className="max-lg:size-10 max-sm:size-6"
-              width={50}
-              height={50}
+              className="size-[3.125rem] max-lg:size-10 max-sm:size-6"
+              width={100}
+              height={100}
               src={avatar}
               alt="Profile picture"
             />

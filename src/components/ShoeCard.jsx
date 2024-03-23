@@ -26,6 +26,8 @@ const ShoeCard = ({ currentBigShoe, updateIndex }) => {
               className={`rounded-md ${currentBigShoe === index ? "opacity-50" : ""}`}
               src={item.thumbnail}
               alt="Shoe collection thumbnail"
+              width={176}
+              height={176}
             />
           </button>
         </li>

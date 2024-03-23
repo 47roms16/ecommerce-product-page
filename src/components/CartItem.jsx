@@ -32,10 +32,10 @@ const CartItem = ({
           <div className="mb-6 pt-6">
             <div className="flex items-center gap-4 ">
               <img
-                className="rounded-[4px]"
+                className="size-[3.125rem] rounded-[4px]"
                 src={shoe1}
-                width={50}
-                height={50}
+                width={1000}
+                height={1000}
                 alt="Cart item - shoe sneakers"
               />
               <div className="text-dark-grayish-blue">

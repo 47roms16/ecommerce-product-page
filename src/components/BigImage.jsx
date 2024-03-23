@@ -27,7 +27,12 @@ const BigImage = ({
               className="min-w-full snap-start object-contain max-md:max-h-[30rem] max-sm:max-h-[18.75rem]"
               key={index}
             >
-              <img src={shoeImg.shoe} alt="Shoe product collection" />
+              <img
+                width={1000}
+                height={1000}
+                src={shoeImg.shoe}
+                alt="Shoe product collection"
+              />
             </li>
           ))}
         </ul>
