@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ProductDetails from "./sections/ProductDetails";
 import Header from "./sections/Header";
+import Footer from "./sections/Footer";
 
 const App = () => {
   const productPrice = 125;
@@ -24,6 +25,7 @@ const App = () => {
         totalPrice={totalPrice}
         setTotalPrice={setTotalPrice}
       />
+      <Footer />
     </>
   );
 };
