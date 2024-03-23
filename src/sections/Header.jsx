@@ -25,7 +25,7 @@ const Header = ({
               <use xlinkHref={isNavVisible ? close : menu}></use>
             </svg>
           </button>
-          <a href="/">
+          <a href="/" aria-label="Go to the Sneakers company homepage">
             <svg width={138} height={20} alt="Sneakers home page">
               <use xlinkHref={logo}></use>
             </svg>
