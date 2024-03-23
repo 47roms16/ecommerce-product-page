@@ -26,9 +26,6 @@ const Header = ({
             </svg>
           </button>
           <a href="/">
-            <p className="absolute left-[99999999px]">
-              Sneakers company home page
-            </p>
             <svg width={138} height={20} alt="Sneakers home page">
               <use xlinkHref={logo}></use>
             </svg>
