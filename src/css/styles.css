@@ -54,11 +54,6 @@
 
   /* ---------- */
 
-  .sale::before {
-    content: "";
-    @apply absolute inset-0 top-1/2 h-[2px] w-full bg-grayish-blue;
-  }
-
   *:focus-visible {
     outline: dashed;
     outline-width: 2px;

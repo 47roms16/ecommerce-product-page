@@ -48,9 +48,9 @@ const ProductDescription = ({
               50%
             </h3>
           </div>
-          <p className="sale | relative size-fit font-bold text-grayish-blue">
+          <s className="relative size-fit font-bold text-grayish-blue">
             $250.00
-          </p>
+          </s>
         </div>
         <h3 className="-order-1 text-sm font-bold uppercase tracking-widest text-orange">
           Sneaker Company
